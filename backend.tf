@@ -3,7 +3,7 @@ terraform {
 
   backend "s3" {
     bucket = "mybucket-statemanagement"
-    key    = "stfilemanagement"
+    key    = "./terraform.tfstate"
     region = "us-east-1"
   }
 }
